@@ -25,4 +25,6 @@ products: storeProducts
         );
     }
 }
-//what is a context api
+//what is a context api 
+//it is a single source of truth that can be accessed from anywhere in our app
+//similar to redux
