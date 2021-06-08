@@ -1,6 +1,6 @@
 export const storeProducts = [
     {
-        id:1,
+        id: 1,
         title: "Google Pixel - Black",
         img: "img/product-1.png",
         price: 10,
@@ -65,4 +65,15 @@ export const storeProducts = [
         count: 0,
         total: 0
     }
-]
+];
+export const detailProduct = {
+    id: 1,
+    title: "Google Pixel - Black",
+    img: "img/product-1.png",
+    price: 10,
+    company: "Google",
+    info: "lorem ipsum dolor",
+    inCart: false,
+    count: 0,
+    total: 0
+};
