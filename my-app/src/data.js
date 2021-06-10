@@ -2,7 +2,7 @@ export const storeProducts = [
     {
         id: 1,
         title: "Google Pixel - Black",
-        img: "img/product-1.png",
+        img: "img/Brownie.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
@@ -13,7 +13,7 @@ export const storeProducts = [
     {
         id:2,
         title: "samsung gallaxy",
-        img: "img/product-1.png",
+        img: "img/Cheese Cake.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
@@ -24,7 +24,7 @@ export const storeProducts = [
     {
         id:3,
         title: "Nokia phantrom",
-        img: "img/product-1.png",
+        img: "img/Compote.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
@@ -35,7 +35,7 @@ export const storeProducts = [
     {
         id:4,
         title: "Apple7",
-        img: "img/product-1.png",
+        img: "img/Cookie.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
@@ -46,7 +46,7 @@ export const storeProducts = [
     {
         id:5,
         title: "lenovo top 3",
-        img: "img/product-1.png",
+        img: "img/Crumble.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
@@ -57,7 +57,7 @@ export const storeProducts = [
     {
         id:6,
         title: "Gren",
-        img: "img/product-1.png",
+        img: "img/Fondant.jpg",
         price: 10,
         company: "Google",
         info: "lorem ipsum dolor",
