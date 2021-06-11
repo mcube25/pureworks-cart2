@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../logo512.jpg';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default class Navbar extends Component {
@@ -22,7 +23,7 @@ export default class Navbar extends Component {
              <Link to='/cart' className="ml-auto">
                  <ButtonContainer>
                      <span className="mr-2">
-                     <i className="fas fa-cart-plus"/>
+                     <FontAwesomeIcon icon="faCartPlus" />
                      </span>
                      my cart
                  </ButtonContainer>
