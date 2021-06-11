@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {ProductConsumer} from '../context';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Product extends Component {
     render() {
@@ -15,7 +15,7 @@ export default class Product extends Component {
     <img src={img} alt="product img" className="card-img-top"/>
 </Link>
 <button className="cart-btn" disabled={inCart?true:false} onClick={()=>{console.log('add to the cart')}}/>
-{inCart?(<p className="text-capitalize mb-0" disabled>inCart</p>):<i className="fas fa-cart-plus"/>}
+{inCart?(<p className="text-capitalize mb-0" disabled>inCart</p>):<FontAwesomeIcon icon="faCartPlus" />}
 </div>
                </div>
             </ProductWrapper >
