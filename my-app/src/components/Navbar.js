@@ -23,7 +23,7 @@ export default class Navbar extends Component {
              <Link to='/cart' className="ml-auto">
                  <ButtonContainer>
                      <span className="mr-2">
-                     <FontAwesomeIcon icon="faCartPlus" />
+                     <i className="fas fa-cart-plus" />
                      </span>
                      my cart
                  </ButtonContainer>
@@ -40,4 +40,5 @@ background: var(--mainBlue);
     font-size: 0.3rem;
     text-transform: capitalize !important;
 }
-`
+`// font awesome
+//https://fontawesome.com
