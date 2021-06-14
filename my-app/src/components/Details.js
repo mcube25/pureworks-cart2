@@ -43,7 +43,7 @@ export default class Details extends Component {
                                     Back to Products
                                 </ButtonContainer>
                             </Link>
-                            <ButtonContainer
+                            <ButtonContainer cart
                             disabled={inCart?true:false}
                             onClick={()=>{
                                 value.addToCart(id)
