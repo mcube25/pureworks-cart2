@@ -8,10 +8,28 @@ const  ProductContext = React.createContext();
  
 
 class ProductProvider extends Component {
-    state ={
+    state = {
         products:[],
         detailProduct:detailProduct
+    };
+
+    //life circle method next
+    //we get our set of values instead of referencing them by the setProducts method
+    componentDidMount(){
+        this.setProducts();
     }
+    setProducts = ()=>{
+        let tempProducts = [];
+        storeProducts.forEach(item=>{
+            const singleItem = {...item};
+            tempProducts = [...tempProducts,singleItem];
+
+        })
+        this.setState(()=>{
+            return {products:tempProducts}
+        })
+    }
+
     handleDetail = ()=>{
         console.log('hello detail');
     }
@@ -19,17 +37,6 @@ class ProductProvider extends Component {
     addToCart = ()=>{
         console.log('hello cart');
     }
-     setProducts = ()=>{
-         let tempProducts = [];
-         storeProducts.forEach(item=>{
-             const singleItem = {...item};
-             products = [...product,singleItem];
-
-         })
-         this.setState(()=>{
-             return {products:tempProducts}
-         })
-     }
 
     render() {
         return (
