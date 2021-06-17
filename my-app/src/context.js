@@ -74,7 +74,9 @@ class ProductProvider extends Component {
            <ProductContext.Provider value={{
 ...this.state,
 handleDetail:this.handleDetail,
-addToCart:this.addToCart
+addToCart:this.addToCart,
+openModal:this.openModal,
+closeModal:this.closeModal
            }}>
                {this.props.children}
            </ProductContext.Provider>
