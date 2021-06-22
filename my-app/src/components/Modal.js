@@ -11,7 +11,7 @@ export default class Modal extends Component {
                 {(value) => {
                     const { modalOpen, closeModal } = value;
                     const { img, title, price } = value.modalProduct;
-                    if (modalOpen) {
+                    if (!modalOpen) {
                         return null;
                     }
                     else {
@@ -26,10 +26,13 @@ export default class Modal extends Component {
                           <h5>{title}</h5>
                           <h5 className="text-muted">price:<span>$ {price}</span></h5>
                           <Link to='/'>
-                          <ButtonContainer>
-                              <div>
-                                  <button></button>
-                              </div>
+                          <ButtonContainer onClick={()=>closeModal()}>
+                              store
+                          </ButtonContainer>
+                          </Link>
+                          <Link to='/cart'>
+                          <ButtonContainer cart onClick={()=>closeModal()}>
+                              go to cart
                           </ButtonContainer>
                           </Link>
                            </div>
