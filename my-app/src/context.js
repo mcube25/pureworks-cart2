@@ -12,8 +12,11 @@ class ProductProvider extends Component {
         products:[],
         detailProduct:detailProduct,
         cart:[],
-        modalOpen: true,
-        modalProduct:detailProduct
+        modalOpen: false,
+        modalProduct:detailProduct,
+        cartSubTotal:0,
+        cartTax:0,
+        cartTotal:0
     };
 
     //life circle method next
@@ -67,6 +70,18 @@ class ProductProvider extends Component {
      this.setState(()=>{
          return {modalOpen:false}
      })
+    };
+    increment = (id) => {
+        console.log('this na increment method')
+    }
+    decrement = (id) => {
+        console.log('this na decrement method')
+    }
+    removeItem = (id) => {
+        console.log('this na remove method')
+    }
+    clearCart = () => {
+        console.log('this na clearcart method')
     }
 
     render() {
@@ -76,7 +91,11 @@ class ProductProvider extends Component {
 handleDetail:this.handleDetail,
 addToCart:this.addToCart,
 openModal:this.openModal,
-closeModal:this.closeModal
+closeModal:this.closeModal,
+increment:this.increment,
+decrement:this.decrement,
+removeItem:this.removeItem,
+clearCart:this.clearCart
            }}>
                {this.props.children}
            </ProductContext.Provider>
