@@ -179,3 +179,5 @@ class ProductProvider extends Component {
 const ProductConsumer = ProductContext.Consumer;
 
 export { ProductProvider, ProductConsumer };
+//https://www.npmjs.com/package/react-paypal-express-checkout
+//setup free sandbox account in developer.paypal.com
