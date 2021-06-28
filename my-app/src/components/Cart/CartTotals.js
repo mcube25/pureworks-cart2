@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export default function CartTotals({ value }) {
     const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
-    return
-    <React.Fragment>
+    return (
+        <React.Fragment>
         <div className="container">
             <div className="row">
                 <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-right">
@@ -22,4 +22,6 @@ export default function CartTotals({ value }) {
             </div>
         </div>
     </React.Fragment>
+    )
+    
 }
